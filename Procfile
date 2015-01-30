@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/cm-website
+web: target/universal/stage/bin/cm-website -Dhttp.port=${PORT}
