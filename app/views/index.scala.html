@@ -1,7 +1,107 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("Accueil") {
 
-    @play20.welcome(message, style = "Java")
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+
+                    <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="800" data-saveperformance="off">
+                        <!-- MAIN IMAGE -->
+                    <img src="@routes.Assets.at("images/main_slider/dummy.png")" alt="laptopmockup_sliderdy" data-lazyload="@routes.Assets.at("images/insecte.jpg")" data-bgposition="center bottom" data-kenburns="on" data-duration="14000" data-ease="Power3.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                    <div class="tp-caption big_caption_9 tp-fade tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-70" data-speed="1000" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">TAKE CARE OF NATURE </div>
+
+                        <!-- LAYER NR. 2 -->
+                    <div class="tp-caption big_caption_8 tp-fade tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-5" data-speed="1000" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Start Recycling Today and help us protect our Environment </div>
+
+                        <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-fade tp-resizeme  contact-eco-button" data-x="center" data-hoffset="0" data-y="center" data-voffset="90" data-speed="1000" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a href="contact.html">GET IN TOUCH</a> </div>
+                </li>
+                    <!-- SLIDE  -->
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="800" data-saveperformance="off">
+                        <!-- MAIN IMAGE -->
+                    <img src="@routes.Assets.at("images/main_slider/dummy.png")" alt="laptopmockup_sliderdy" data-lazyload="@routes.Assets.at("images/Syrphe.jpg")" data-bgposition="center bottom" data-kenburns="on" data-duration="14000" data-ease="Power3.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                    <div class="tp-caption big_caption_9 tp-fade tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-70" data-speed="1000" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">TAKE CARE OF NATURE </div>
+
+                        <!-- LAYER NR. 2 -->
+                    <div class="tp-caption big_caption_8 tp-fade tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-5" data-speed="1000" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Start Recycling Today and help us protect our Environment </div>
+
+                        <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-fade tp-resizeme  contact-eco-button" data-x="center" data-hoffset="0" data-y="center" data-voffset="90" data-speed="1000" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a href="contact.html">GET IN TOUCH</a> </div>
+                </li>
+            </ul>
+            <div class="tp-bannertimer"></div>
+        </div>
+    </div>
+
+    <div class="wraper">
+        <div class="container">
+            <div class="eco_main_heading">
+                <h1 class="text-center"> <strong><span>ECO</span><span class="eco_color">.</span><span> RECYCLING </span></strong><strong><span class="eco_color">SERVICES</span></strong> </h1>
+                <div class="eco_small_text text-center">We provide several services that will help you with your recycling Process</div>
+            </div>
+        </div>
+    </div>
+    <!--Home Heading End-->
+    <!--Home Section End-->
+    <!--Services Section Start-->
+    <div class="eco_service_wraper">
+        <div class="container">
+            <div class="eco_service text-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="eco_home_service" data-scrollreveal="enter from the left over 1s">
+                        <div class="eco_service_icon">
+                            <a href="#" class="eco_transition"> <i class="fa fa-cube"></i> </a>
+                        </div>
+                        <div class="eco_service_text">
+                            <h5> CARDBOARD RECYCLING </h5>
+                            <div class="eco_service_data">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices posuere cubilia Curae.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="eco_home_service" data-scrollreveal="enter from the bottom over 1s">
+                        <div class="eco_service_icon">
+                            <a href="#" class="eco_transition"> <i class="fa fa-glass"></i> </a>
+                        </div>
+                        <div class="eco_service_text">
+                            <h5> CARDBOARD RECYCLING </h5>
+                            <div class="eco_service_data">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices posuere cubilia Curae.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="eco_home_service" data-scrollreveal="enter from the bottom over 1s">
+                        <div class="eco_service_icon">
+                            <a href="#" class="eco_transition"> <i class="fa fa-truck"></i> </a>
+                        </div>
+                        <div class="eco_service_text">
+                            <h5> CARDBOARD RECYCLING </h5>
+                            <div class="eco_service_data">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices posuere cubilia Curae.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="eco_home_service" data-scrollreveal="enter from the right over 1s">
+                        <div class="eco_service_icon">
+                            <a href="#" class="eco_transition"> <i class="fa fa-leaf"></i> </a>
+                        </div>
+                        <div class="eco_service_text">
+                            <h5> CARDBOARD RECYCLING </h5>
+                            <div class="eco_service_data">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices posuere cubilia Curae.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eco_service_btn"> <a href="" class="eco_btn text-center">VIEW ALL SERVICES</a> </div>
+            </div>
+        </div>
+    </div>
 
 }

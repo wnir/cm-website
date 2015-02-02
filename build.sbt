@@ -6,9 +6,9 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.11.1"
 
-libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
-  cache,
-  javaWs
-)
+libraryDependencies += "io.prismic" % "java-kit" % "1.1.1"
+
+libraryDependencies += javaWs
+
+TwirlKeys.templateImports += "controllers.Prismic._"
+

@@ -1,0 +1,19 @@
+@(entreprise: io.prismic.Document)
+@scripts = {
+    <script type="text/javascript">$('#accordion').accordion({heightStyle: 'panel'});</script>
+}
+
+@main("Entreprise", scripts) {
+    <div class="container">
+        <div id="accordion" class="padder_bottom_70">
+    @for(group <- entreprise.getGroup("presentation.Presentation").getDocs()) {
+        @Html(group.getHtml("Title", prismic.getLinkResolver()))
+        <div>
+            @Html(group.getHtml("body", prismic.getLinkResolver()))
+        </div>
+    }
+            </div>
+
+
+    </div>
+}
