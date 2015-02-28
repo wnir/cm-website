@@ -1,0 +1,3 @@
+@(maybeDate: Option[org.joda.time.DateTime], pattern: String = "dd/MM/yyyy HH:mm")
+
+@maybeDate.map( date => org.joda.time.format.DateTimeFormat.forPattern(pattern).print(date))

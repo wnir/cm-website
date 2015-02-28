@@ -822,6 +822,14 @@ ul.my_menu ul.sub-menu li:hover a.active {
 	display: none;
 	top: 100%;
 }
+.helpForm {
+    font-size: 8px;
+    color: #80a93d;
+}
+.errorForm {
+    font-size: 9px;
+    color: #D2173A;
+}
 .eco_input {
 	float: left;
 	width: 100%;

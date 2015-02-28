@@ -3,12 +3,29 @@
 # ~~~~
 
 # Home page
-GET        /                    controllers.Application.index()
+GET         /                      controllers.Application.index()
 
-GET        /entreprise          controllers.Application.entreprise()
+GET         /entreprise            controllers.Application.entreprise()
 
-GET        /not-found           controllers.Application.brokenLink()
+GET         /not-found             controllers.Application.brokenLink()
+
+GET         /preview               controllers.Application.preview(token: String)
+
+GET         /contact               controllers.Comments.showCreationForm
+
+POST        /contact               controllers.Comments.create
+
+GET         /admin/login           controllers.SecureZone.login
+
+POST        /admin/login           controllers.SecureZone.authenticate
+
+GET         /admin/comments        controllers.Comments.index
+
+GET         /admin/contentMgt      controllers.Comments.contentPage
+
+GET         /admin/logout          controllers.SecureZone.logout
+
 
 
 # Map static resources from the /public folder to the /assets URL path
-GET        /assets/*file        controllers.Assets.at(path="/public", file)
+GET         /assets/*file          controllers.Assets.at(path="/public", file)

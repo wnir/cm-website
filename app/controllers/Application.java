@@ -32,7 +32,7 @@ public class Application extends Controller {
 
             // For "Bookmarked" documents that use a special page
             if(isBookmark(api, link, "ctrlmed-presentation")) {
-                return routes.Application.entreprise().absoluteURL(request);
+                return controllers.routes.Application.entreprise().absoluteURL(request);
             }
             /*else if(isBookmark(api, link, "jobs")) {
                 return routes.Application.jobs().absoluteURL(request);
@@ -62,7 +62,7 @@ public class Application extends Controller {
             }*/
 
             // Any other link
-            return routes.Application.brokenLink().absoluteURL(request);
+            return controllers.routes.Application.brokenLink().absoluteURL(request);
         }
     }
 
@@ -88,6 +88,14 @@ public class Application extends Controller {
         } else {
             return ok(entreprise.render(entreprisePage));
         }
+    }
+
+    @Prismic.Action
+    public static Result preview(String token) {
+        String indexUrl = controllers.routes.Application.index().url();
+        String url = prismic().api.previewSession(token, prismic().getLinkResolver(), indexUrl);
+        response().setCookie(io.prismic.Prismic.PREVIEW_COOKIE, token, 1800);
+        return redirect(url);
     }
 
 }

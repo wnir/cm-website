@@ -1,0 +1,36 @@
+@(comments: scala.collection.immutable.List[Comment])(implicit request: RequestHeader)
+
+@admin.layout("Contacts") {
+    <div id="page-wrapper">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Titre
+                        </th>
+                        <th>
+                            Sujet
+                        </th>
+                        <th>
+                            Date d'envoi
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+    @for(comment <- comments) {
+        <tr>
+            <td>@comment.email</td>
+            <td>@comment.title</td>
+            <td>@comment.subject</td>
+            <td>@util.format(comment.creationDate)</td>
+        </tr>
+    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
