@@ -529,7 +529,7 @@ text-shadow:none;
 }
 
 .tp-caption a {
-color:#fff;
+color:#58585a;
 text-shadow:none;
 -webkit-transition:all 0.2s ease-out;
 -moz-transition:all 0.2s ease-out;
@@ -537,9 +537,10 @@ text-shadow:none;
 -ms-transition:all 0.2s ease-out;
 padding: 15px 40px;
 border-radius: 40px;
-border: 2px solid #fff;
+border: 2px solid #58585a;
 display: inline-block;
 text-align: center;
+font-weight: bolder;
 }
 
 .tp-caption a:hover {

@@ -140,6 +140,12 @@ body {
  background: #94bb54; /* Firefox */
  color:#fff;
 }
+
+/*#button-evt{
+    color: #58585a;
+    font-size: 26;
+    font-weight: bolder;
+}*/
 /*---------------------body End---------------------*/
 /*---------------------loder css start---------------------*/
 #preloader {
@@ -616,7 +622,12 @@ header {
 }
 .fixedmenu .logo-fixedmenu {
 	float: left;
-	padding-left: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 12px 13px;
+    font-weight: bolder;
+    color: #a2c309;
+    font-size: 24px;
 }
 .fixedmenu .logo-fixedmenu img {
 	height: 40px;
@@ -876,9 +887,9 @@ ul.my_menu ul.sub-menu li:hover a.active {
 	font-family: "Oswald";
 }
 .tp-caption.big_caption_9 {
-	font-size: 100px;
+	font-size: 60px;
 	color: #fff;
-	font-weight: 800;
+	font-weight: 400;
 	text-transform: uppercase;
 	font-family: "Oswald";
 }

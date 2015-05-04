@@ -44,13 +44,14 @@ $(document).ready(function() {
         }
         if (jQuery('.eco_home').hasClass('eco_home')) {
             var menu = jQuery('.mainmenu');
-            var h = 970;
+            var h = 0;
             jQuery(window).scroll(function() {
-                if (!menu.isOnScreen() && jQuery(this).scrollTop() > h) {
+                jQuery(".fixedmenu").slideDown(200);
+                /*if (!menu.isOnScreen() && jQuery(this).scrollTop() > h) {
                     jQuery(".fixedmenu").slideDown(200);
                 } else {
                     jQuery(".fixedmenu").slideUp(200);
-                }
+                }*/
             });
             jQuery.fn.isOnScreen = function() {
 
@@ -73,13 +74,17 @@ $(document).ready(function() {
             }
         } else {
             var menu = jQuery('.mainmenu');
-            var h = 320;
+            var h = 0;
+            $( document ).ready(function() {
+                jQuery(".fixedmenu").slideDown(200);
+            });
             jQuery(window).scroll(function() {
-                if (!menu.isOnScreen() && jQuery(this).scrollTop() > h) {
+                jQuery(".fixedmenu").slideDown(200);
+                /*if (!menu.isOnScreen() && jQuery(this).scrollTop() > h) {
                     jQuery(".fixedmenu").slideDown(200);
                 } else {
                     jQuery(".fixedmenu").slideUp(200);
-                }
+                }*/
             });
             jQuery.fn.isOnScreen = function() {
 

@@ -3,29 +3,37 @@
 # ~~~~
 
 # Home page
-GET         /                      controllers.Application.index()
+GET         /                        controllers.Application.index()
 
-GET         /entreprise            controllers.Application.entreprise()
+GET         /entreprise              controllers.Application.entreprise()
 
-GET         /not-found             controllers.Application.brokenLink()
+GET         /produits                controllers.Application.produits()
 
-GET         /preview               controllers.Application.preview(token: String)
+GET         /evenements              controllers.Application.events()
 
-GET         /contact               controllers.Comments.showCreationForm
+GET         /bioExpo                 controllers.Application.bioExpo()
 
-POST        /contact               controllers.Comments.create
+GET         /partenaires             controllers.Application.partners()
 
-GET         /admin/login           controllers.SecureZone.login
+GET         /not-found               controllers.Application.brokenLink()
 
-POST        /admin/login           controllers.SecureZone.authenticate
+GET         /preview                 controllers.Application.preview(token: String)
 
-GET         /admin/comments        controllers.Comments.index
+GET         /contact                 controllers.Comments.showCreationForm
 
-GET         /admin/contentMgt      controllers.Comments.contentPage
+POST        /contact                 controllers.Comments.create
 
-GET         /admin/logout          controllers.SecureZone.logout
+GET         /admin/login             controllers.SecureZone.login
+
+POST        /admin/login             controllers.SecureZone.authenticate
+
+GET         /admin/comments          controllers.Comments.index
+
+GET         /admin/contentMgt        controllers.Comments.contentPage
+
+GET         /admin/logout            controllers.SecureZone.logout
 
 
 
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file          controllers.Assets.at(path="/public", file)
+GET         /assets/*file            controllers.Assets.at(path="/public", file)

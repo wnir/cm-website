@@ -90,6 +90,21 @@ public class Application extends Controller {
         }
     }
 
+    public static Result produits() {
+        return ok(produits.render());
+    }
+
+    public static Result events() {
+        return ok(events.render());
+    }
+
+    public static Result bioExpo() {
+        return ok(bioExpo.render());
+    }
+
+    public static Result partners() {
+        return ok(partners.render());
+    }
     @Prismic.Action
     public static Result preview(String token) {
         String indexUrl = controllers.routes.Application.index().url();
