@@ -13,6 +13,8 @@ GET         /evenements              controllers.Application.events()
 
 GET         /bioExpo                 controllers.Application.bioExpo()
 
+GET         /siamap-2015             controllers.Application.siamap2015()
+
 GET         /partenaires             controllers.Application.partners()
 
 GET         /not-found               controllers.Application.brokenLink()

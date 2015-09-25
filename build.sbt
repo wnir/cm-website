@@ -14,7 +14,7 @@ libraryDependencies += javaWs
 
 libraryDependencies += filters
 
-libraryDependencies += "org.reactivemongo" %% "reactivemongo" % "0.11.0-SNAPSHOT"
+libraryDependencies += "org.reactivemongo" %% "reactivemongo" % "0.11.0"
 
 libraryDependencies += "org.reactivemongo" %% "play2-reactivemongo" % "0.10.5.0.akka23"
 

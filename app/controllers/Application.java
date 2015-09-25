@@ -102,6 +102,10 @@ public class Application extends Controller {
         return ok(bioExpo.render());
     }
 
+    public static Result siamap2015() {
+        return ok(siamap.render());
+    }
+
     public static Result partners() {
         return ok(partners.render());
     }
